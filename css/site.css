@@ -9,12 +9,12 @@ html {
   padding: 0;
   font-size: 1.25rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(255, 255, 255, 0.5); }
 
 .nav-link:hover,
 .nav-link:focus,
 .active .nav-link {
-  color: rgba(0, 0, 0, 0.8); }
+  color: rgba(143, 143, 143, 0.8); }
 
 .nav-item + .nav-item {
   margin-left: 1rem; }
@@ -38,6 +38,55 @@ html {
 .avatar img {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
+
+.black {
+    background-color: #000000;
+}
+
+.bg-primary
+{
+  background-color: blue;
+}
+
+.bg-text {
+  position: absolute;
+  margin-bottom: -1em;
+  top: -80px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  font-weight: 700 !important;
+  color: rgba(201, 201, 201, 0.267);
+  text-transform: uppercase;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+}
+
+.icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.icon-box h3 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  line-height: 1;
+  font-size: 20px;
+  color: rgb(235, 235, 235);
+}
+
+.icon-box:hover {
+  background: rgba(255, 255, 255, 0.507);
+}
 
 footer a:not(.nav-link) {
   color: inherit;
