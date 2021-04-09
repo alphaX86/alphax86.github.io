@@ -18,7 +18,7 @@
   content: '';
   display: inline-block;
   position: absolute;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 10px;
   width: 12px;
   height: 12px;
@@ -58,6 +58,11 @@
 
 html {
   scroll-behavior: smooth; }
+
+.style
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .site-title {
   font-size: 1.25rem;
