@@ -1,5 +1,68 @@
+/* Buttons */
+/* Inputs */
+/* Timeline custom component */
+.timeline {
+  border-left: 2px solid #E6E9ED;
+  padding: 1rem 0; }
+
+.timeline-card {
+  position: relative;
+  margin-left: 31px;
+  border-left: 2px solid;
+  margin-bottom: 2rem; }
+
+.timeline-card:last-child {
+  margin-bottom: 1rem; }
+
+.timeline-card:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #000;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  top: 20px;
+  left: -41px;
+  border: 2px solid;
+  z-index: 2; }
+
+.timeline-card:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: currentColor;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  left: -29px;
+  z-index: 1; }
+
+.timeline-card-primary {
+  border-left-color: blue; }
+
+.timeline-card-primary:before {
+  border-color: #4A89DC; }
+
+.timeline-card-primary:after {
+  background-color: #4A89DC; }
+
+.timeline-card-success {
+  border-left-color: green; }
+
+.timeline-card-success:before {
+  border-color: #37BC9B; }
+
+.timeline-card-success:after {
+  background-color: #37BC9B; }
+
 html {
   scroll-behavior: smooth; }
+
+.style
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .site-title {
   font-size: 1.25rem;
@@ -39,15 +102,30 @@ html {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
+footer a:not(.nav-link) {
+  color: inherit;
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  cursor: pointer; }
+
 .black {
-    background-color: #000000;
+  background-color: #000000;
 }
 
-.bg-primary
+.txt-black
+{
+  color: #000000;
+}
+
+.blue
 {
   background-color: blue;
 }
 
+.red
+{
+  background-color: red;
+}
 .bg-text {
   position: absolute;
   margin-bottom: -1em;
@@ -60,7 +138,7 @@ html {
   text-transform: uppercase;
 }
 
-.icon-box {
+.interests .icon-box {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -68,13 +146,13 @@ html {
   transition: ease-in-out 0.3s;
 }
 
-.icon-box i {
+.interests .icon-box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
 }
 
-.icon-box h3 {
+.interests .icon-box h3 {
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -84,15 +162,9 @@ html {
   color: rgb(235, 235, 235);
 }
 
-.icon-box:hover {
+.interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.507);
 }
-
-footer a:not(.nav-link) {
-  color: inherit;
-  border-bottom: 1px dashed;
-  text-decoration: none;
-  cursor: pointer; }
 
 @media (min-width: 48em) {
   .site-title {
@@ -103,7 +175,29 @@ footer a:not(.nav-link) {
     margin-bottom: -80px;
     margin-left: 0; } }
 
-.style
-{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@media print {
+  body {
+    background-color: #101010; }
+  .container {
+    width: auto;
+    max-width: 100%;
+    padding: 0; }
+  .cover, .cover-bg {
+    border-radius: 0; }
+  .cover.shadow-lg {
+    box-shadow: none !important; }
+  .cover-bg {
+    padding: 5rem !important;
+    padding-bottom: 10px !important; }
+  .avatar {
+    margin-top: -10px; }
+  .about-section {
+    padding: 6.5rem 5rem 2rem !important; }
+  .skills-section,
+  .work-experience-section,
+  .education-section,
+  .contant-section {
+    padding: 1.5rem 5rem 2rem !important; }
+  .page-break {
+    padding-top: 5rem;
+    page-break-before: always; } }
